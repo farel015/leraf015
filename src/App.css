@@ -24,9 +24,27 @@
   border-radius: 4px;
 }
 
+.linknav:active {
+  transition: 300ms;
+  background-color: var(--second-color) !important;
+  border-radius: 4px;
+  color: #10164b;
+}
+
+.menucanvas {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+#offcannav {
+  background-color: #ffffffeb;
+  width: 60%;
+  height: 100%;
+}
+
 #homePage {
-  height: 1500px;
-  padding: 10px 0;
+  height: 1600px;
+  padding: 5px 0;
 }
 
 #technologyPage {
@@ -76,5 +94,9 @@
 @media only screen and (max-width: 600px) {
   .linknav {
     padding: 10px 0;
+  }
+
+  .iklan {
+    width: 100%;
   }
 }

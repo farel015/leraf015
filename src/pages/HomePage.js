@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <section id="homePage">
       <Container>
-        <Row className="pt-5">
+        <Row className="mt-3">
           <img src={iklan} alt="iklan blog" />
         </Row>
         <div className="d-flex mt-5">
@@ -23,7 +23,7 @@ const HomePage = () => {
             </h5>
           </div>
           <div className="ms-auto">
-            <Form.Control type="search" size="sm" placeholder="Search ...." className="me-2" aria-label="Search" />
+            <Form.Control type="search" size="sm" placeholder="search ...." className="me-2" aria-label="Search" />
           </div>
         </div>
         <Form.Text muted>latest trending news. </Form.Text>
