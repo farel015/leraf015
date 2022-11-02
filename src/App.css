@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;600&display=swap");
+
+:root {
+  --primary-color: #242424;
+  --second-color: #f8f9fa;
+}
+
+* {
+  font-family: "Lexend", sans-serif;
+  color: var(--primary-color) !important;
+}
+
+.linknav {
+  padding: 10px 10px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--primary-color) !important;
+  text-decoration: none;
+}
+
+.linknav:hover {
+  transition: 300ms;
+  background-color: var(--second-color) !important;
+  border-radius: 4px;
+}
+
+#homePage {
+  height: 1500px;
+  padding: 10px 0;
+}
+
+#technologyPage {
+  height: 1500px;
+}
+
+#softwarePage {
+  height: 1500px;
+}
+
+#gamesPage {
+  height: 1500px;
+}
+
+#moviesPage {
+  height: 1500px;
+}
+
+#Footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--second-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b6b6b6;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  transition: 300ms;
+  background: #afafaf;
+}
+
+@media only screen and (max-width: 600px) {
+  .linknav {
+    padding: 10px 0;
+  }
+}
