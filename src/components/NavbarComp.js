@@ -16,12 +16,11 @@ const NavbarComp = () => {
           <Navbar.Brand as={Link} to="/">
             <span className="fw-bolder">Leraf015.</span>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="offcanvasNavbar-expand" className="border-0" onClick={handleShow} />
-          {/* <Navbar.Collapse id="basic-navbar-nav"> */}
+          <Navbar.Toggle aria-controls="offcanvasNavbar-expand" className="" onClick={handleShow} />
           <Navbar.Offcanvas show={show} onHide={handleClose} id="offcannav">
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title as={Link} to="/">
-                <span className="menucanvas">Menu</span>
+              <Offcanvas.Title>
+                <span className="fw-bolder fs-1">Menu</span>
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
@@ -39,7 +38,6 @@ const NavbarComp = () => {
                   <span className="linknav">Movies</span>
                 </Nav.Link>
               </Nav>
-              {/* </Navbar.Collapse> */}
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>
