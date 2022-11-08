@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Container, Navbar, Nav, Offcanvas } from "react-bootstrap";
-import AnnoucmentComp from "./AnnoucmentComp";
 import { Link } from "react-router-dom";
 
 const NavbarComp = () => {
@@ -10,17 +9,16 @@ const NavbarComp = () => {
   const handleShow = () => setShow(true);
   return (
     <>
-      <AnnoucmentComp />
-      <Navbar bg="white" sticky="top" expand="lg">
+      <Navbar className="warnanav" sticky="top" expand="lg">
         <Container>
           <Navbar.Brand as={Link} to="/">
-            <span className="fw-bolder">Leraf015.</span>
+            <span className="fw-bolder text-white">Leraf015.</span>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="offcanvasNavbar-expand" className="" onClick={handleShow} />
+          <Navbar.Toggle aria-controls="offcanvasNavbar-expand" variant="white" onClick={handleShow} />
           <Navbar.Offcanvas show={show} onHide={handleClose} id="offcannav">
             <Offcanvas.Header closeButton>
               <Offcanvas.Title>
-                <span className="fw-bolder fs-1">Menu</span>
+                <span className="fw-bolder fs-1 text-white">Menu</span>
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>

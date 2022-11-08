@@ -3,43 +3,47 @@
 :root {
   --primary-color: #242424;
   --second-color: #f8f9fa;
+  --third-color: #deefff;
 }
 
 * {
   font-family: "Lexend", sans-serif;
-  color: var(--primary-color) !important;
+  color: var(--primary-color);
 }
 
 .linknav {
   padding: 10px 10px;
   font-size: 15px;
   font-weight: 400;
-  color: var(--primary-color) !important;
+  color: var(--second-color);
   text-decoration: none;
 }
 
 .linknav:hover {
   transition: 300ms;
-  background-color: var(--second-color) !important;
-  border-radius: 4px;
+  background-color: #0e155a;
+  border-radius: 3px;
 }
 
-.linknav:active {
-  transition: 300ms;
-  background-color: var(--second-color) !important;
-  border-radius: 4px;
-  color: #10164b;
+.warnanav {
+  background-color: #090e3a;
 }
 
 #offcannav {
-  background-color: #ffffffeb;
+  background-color: #181e56eb;
   width: 70%;
   height: 100%;
 }
 
+#hero {
+  border-top: 1px solid #181e56;
+  padding-top: 150px;
+  background-color: #090e3a;
+  height: 500px;
+}
+
 #homePage {
   height: 1800px;
-  padding: 5px 0;
 }
 
 #technologyPage {
@@ -68,23 +72,17 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 13px;
+  width: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--second-color);
+  background: #090e3ad4;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #b6b6b6;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  transition: 300ms;
-  background: #afafaf;
+  background: #8892b5;
 }
 
 @media only screen and (max-width: 600px) {

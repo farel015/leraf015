@@ -4,7 +4,7 @@ import { Container, Card } from "react-bootstrap";
 const AnnoucmentComp = () => {
   return (
     <>
-      <Card className="border-0 py-3 text-center" bg="light">
+      <Card className="border-0 py-2 text-center" bg="light">
         <Container>
           <span>
             jangan lupa mampir ke sosial media saya {""}
